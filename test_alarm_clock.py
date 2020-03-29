@@ -25,7 +25,7 @@ class AutoAlarmTests(unittest.TestCase):
 
     def test_ThursdayUni(self):
         result = alarm_clock.autoAlarm("Thursday", False)
-        self.assertEqual('7:30', result)
+        self.assertEqual('7:45', result)
 
     def test_FridayUni(self):
         result = alarm_clock.autoAlarm("Friday", False)
