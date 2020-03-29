@@ -4,7 +4,7 @@ An automated alarm clock that adjusts depending on the day of the week and wheth
 ----------
 * ***If it's a standard term day***...
   * I need to wake up at 6:00 on Mondays, Tuesdays and Fridays
-  * and ot 7:45 on Wednesdays and Thursdays
+  * and at 7:45 on Wednesdays and Thursdays
 * ***If there is no uni on a weekday*** (it's Easter, Christmas or summer holidays),
   * then I wake up at 9:00
 
