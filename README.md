@@ -1,4 +1,6 @@
 # Automated Alarm Clock
+[![Build Status](https://travis-ci.com/dave-light/alarm-clock.svg?token=8VzQcFZGdx7xQoVYeEZv&branch=master)](https://travis-ci.com/dave-light/alarm-clock)
+
 An automated alarm clock that adjusts depending on the day of the week and whether I am at university (term time) or on not
 
 ----------
@@ -6,7 +8,7 @@ An automated alarm clock that adjusts depending on the day of the week and wheth
   * I need to wake up at 6:00 on Mondays, Tuesdays and Fridays
   * and at 7:45 on Wednesdays and Thursdays
 * ***If there is no uni on a weekday*** (it's Easter, Christmas or summer holidays),
-  * then I wake up at 9:00
+  * then I can wake up at 9:00
 
 * ***If it's a weekend***
   * I always wake up at 9:00am on the weekends (regardless of the day or whether it's in or out of term time)
@@ -21,10 +23,10 @@ An automated alarm clock that adjusts depending on the day of the week and wheth
 
 **Output:**
 ------------
-autoAlarm() returns one output (a string): time (e.g. "8:00")
+autoAlarm() returns one output (a string): time (e.g. "6:00")
 
 **Examples:**
-inputs => output/s
+Inputs => output
 --------------------------------
 * Wednesday True => 9:00
 * Monday False => 6:00
@@ -32,3 +34,7 @@ inputs => output/s
 * Wednesday False => 7:45
 * Saturday True => 9:00
 * Sunday False => 9:00
+
+**Usage:**
+--------------------------------
+``` python3 alarm_clock.py```
