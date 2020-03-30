@@ -21,8 +21,13 @@ def notAtUni(date):
         return True
 
 if __name__ == '__main__':
-    today = datetime.datetime.now()
-    day = today.strftime("%A")
-    atUni = notAtUni(today)
-    alarmTime = autoAlarm(day, atUni)
-    print ("Alarm is set for", alarmTime)
+    print('Press "ctrl + c" to abort')
+    current_day_value = -1
+    while True:
+        today = datetime.datetime.now()
+        day = today.strftime("%A")
+        atUni = notAtUni(today)
+        alarmTime = autoAlarm(day, atUni)
+        if current_day_value != datetime.datetime.today().weekday():
+            current_day_value = datetime.datetime.today().weekday()
+            print ("Alarm is set for", alarmTime)
