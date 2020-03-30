@@ -1,6 +1,6 @@
 '''
-Unit tests for alarm_clock.py, dayOfTheWeekNoUni checks the correct time is returned for a day with no uni.
-Likewise, dayOfTheWeekUni checks the correct time is returned for a day with uni.
+Unit tests for alarm_clock.py, test_ThurdayNoUni checks the correct time is returned for a day with no university.
+Likewise, dest_ThurdayUni checks the correct time is returned for a day when I am at university.
 '''
 import unittest
 import alarm_clock
