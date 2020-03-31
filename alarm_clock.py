@@ -23,6 +23,7 @@ def notAtUni(date):
 if __name__ == '__main__':
     print('Press "ctrl + c" to abort')
     current_day_value = -1
+    travis_ci = True
     while True:
         today = datetime.datetime.now()
         day = today.strftime("%A")
@@ -31,3 +32,5 @@ if __name__ == '__main__':
         if current_day_value != datetime.datetime.today().weekday():
             current_day_value = datetime.datetime.today().weekday()
             print ("Alarm is set for", alarmTime)
+        if travis_ci:
+            break
