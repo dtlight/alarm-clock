@@ -4,4 +4,4 @@ python:
   - "3.6"
 cache: pip
 install: "pip3 install -r requirements.txt"
-script: python3 test_alarm_clock.py
+script: "./testscript.sh"
