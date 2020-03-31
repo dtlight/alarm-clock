@@ -1,3 +1,5 @@
+before_install:
+  - chmod +x testscript.sh
 dist: bionic
 language: python
 python:
