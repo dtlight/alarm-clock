@@ -37,4 +37,9 @@ Inputs => output
 
 **Usage:**
 --------------------------------
+set travis_ci to False.
+
+run:
 ``` python3 alarm_clock.py```
+
+type "ctrl + C" to abort
