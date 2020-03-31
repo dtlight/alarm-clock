@@ -35,11 +35,12 @@ if __name__ == '__main__':
         if current_day_value != datetime.datetime.today().weekday():
             current_day_value = datetime.datetime.today().weekday()
             print ("Next alarm is set for", alarmTime)
-        mixer.init()
-        mixer.music.load("alarm_noise.mp3")
-        currentTime = today.strftime("%X")
-        if currentTime[1:5] == alarmTime and not travisCI:
-            mixer.music.play(5)
-            time.sleep(5)
-        if travisCI:
+        if not travisCI:
+            mixer.init()
+            mixer.music.load("alarm_noise.mp3")
+            currentTime = today.strftime("%X")
+            if currentTime[1:5] == alarmTime:
+                mixer.music.play(5)
+                time.sleep(5)
+        else:
             break
