@@ -25,7 +25,7 @@ def notAtUni(date):
 if __name__ == '__main__':
     print('Press "ctrl + c" to abort')
     current_day_value = -1
-    travis_ci = True
+    travisCI = True
     while True:
         today = datetime.datetime.now()
         day = today.strftime("%A")
@@ -38,8 +38,8 @@ if __name__ == '__main__':
         mixer.init()
         mixer.music.load("alarm_noise.mp3")
         currentTime = today.strftime("%X")
-        if currentTime[1:5] == alarmTime:
+        if currentTime[1:5] == alarmTime and not travisCI:
             mixer.music.play(5)
             time.sleep(5)
-        if travis_ci:
+        if travisCI:
             break
